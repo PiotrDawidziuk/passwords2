@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+body {
+    /*background: radial-gradient(at 50% 60%, rgba(123, 22, 255, 0.75), #0f015e) no-repeat center center fixed;*/
+
+    background: #076585;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.messages {
+    text-align: center;
+    color:   #990000;
+    margin: auto;
+    font-size: 150%;
+
+    /*font-family: "Arial", sans-serif;*/
+}
+
+.messages2 {
+    text-align: center;
+    color: darkgreen;
+    margin: auto;
+    font-size: 150%;
+    /*font-family: "Arial", sans-serif;*/
+}
+.list {
+    text-align: center;
+    color:  #2e2e1f;
+    margin: auto;
+    font-size: 150%;
+}
+body, html {
+    height: 100%;
+    display: grid;
+
+}
+.center{ /* thing to center */
+    margin: auto;
+}
+
+p {
+    text-align: center;
+    font-size: 150%;
+    /*font-family: "Arial", sans-serif;*/
+
+}
+
+.button {
+    background-color: #43464B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+h1 {
+    font-family: 'Play', sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px darkgray;
+    font-size: 600%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 50%;
+    display: inline-block;
+
+}
+/*.error {*/
+    /*color:#990000;*/
+    /*background-color: lightgray;*/
+/*}*/
