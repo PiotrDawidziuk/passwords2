@@ -12,7 +12,7 @@ public class Password {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
 
-    String password;
+    String value;
 
     @ManyToOne
     User user;
@@ -36,12 +36,11 @@ public class Password {
         this.id = id;
     }
 
-    public String getPassword() {
-        return password;
+    public String getValue() {
+        return value;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setValue(String value) {
+        this.value = value;
     }
-
 }

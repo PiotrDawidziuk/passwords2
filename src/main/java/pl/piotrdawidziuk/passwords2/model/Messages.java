@@ -19,7 +19,7 @@ public class Messages {
 
     public List<String> createList(String [] words){
 
-        String s = password.getPassword();
+        String s = password.getValue();
         User user = password.getUser();
         String username = user.getUsername();
         String email = user.getEmail();
@@ -41,7 +41,7 @@ public class Messages {
 
     public List<String> createListPositive () {
 
-        String s = password.getPassword();
+        String s = password.getValue();
 
         List <String> list = new ArrayList<>();
         list.add(isLong(s));

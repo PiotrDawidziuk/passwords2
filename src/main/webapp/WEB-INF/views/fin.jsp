@@ -21,7 +21,7 @@
     </tr>
     <c:forEach items="${passwords}" var="password">
         <tr>
-            <td>${password.password}</td>
+            <td>${password.value}</td>
         </tr>
     </c:forEach>
 </table>

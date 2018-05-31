@@ -24,11 +24,11 @@
     Enter a sample password you want to test!
 </p>
 
-<form:form modelAttribute="password" class="center">
+<form:form modelAttribute="password" method="post" class="center">
     <%--<form:errors path="*"/>--%>
-    <p><label for="password">Enter password</label></p>
-    <p><form:input path="password" id="password" type="password"/></p>
-    <p><form:errors path="password" cssClass="error"/></p>
+    <p><label for="password_id">Enter password</label></p>
+    <p><form:input path="value" id="password_id" type="password"/></p>
+    <p><form:errors path="value" cssClass="error"/></p>
 
     <p>
         <button type="submit" class="button">Test password security!</button>

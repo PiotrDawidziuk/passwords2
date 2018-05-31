@@ -7,10 +7,7 @@ import org.springframework.format.FormatterRegistry;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import pl.piotrdawidziuk.passwords2.converter.UserConverter;
 import pl.piotrdawidziuk.passwords2.lib.FileLoader;
 import pl.piotrdawidziuk.passwords2.model.Messages;
@@ -70,8 +67,10 @@ public class PasswordController {
 //    }
 
 
-    @PostMapping("/pass/{id}")
-    String pass(@PathVariable long id, Model model, @Valid Password password, BindingResult result) throws IOException {
+    @RequestMapping(value = "/pass/{id}", method = RequestMethod.POST)
+    public String pass(@PathVariable long id,
+                       @ModelAttribute("password") @Valid Password password,
+                       Model model, BindingResult result) throws IOException {
 
         File file = fileLoader.get("static/english.txt");
         String sCurrentLine;
