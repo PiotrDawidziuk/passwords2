@@ -73,7 +73,7 @@ public class PasswordController {
     @PostMapping("/pass/{id}")
     String pass(@PathVariable long id, Model model, @Valid Password password, BindingResult result) throws IOException {
 
-        File file = fileLoader.get("english.txt");
+        File file = fileLoader.get("static/english.txt");
         String sCurrentLine;
         List<String> lista = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(file));
@@ -90,7 +90,7 @@ public class PasswordController {
         } else {
 
             password.setId(0);
-            password.setUser(userRepository.findOne(id));
+            password.setUser(userRepository.findById(id).orElse(null));
             passwordRepository.save(password);
 
             Messages messages = new Messages(password);
@@ -142,7 +142,7 @@ public class PasswordController {
         String link = "deleted";
 
         try {
-            userRepository.delete(id);
+            userRepository.deleteById(id);
         } catch (EmptyResultDataAccessException e) {
             deleteLink = "/";
         }

@@ -26,7 +26,7 @@ public class HomeController {
     @ResponseBody
     public String workersAction() throws IOException {
         StringBuffer result = new StringBuffer();
-        File file = fileLoader.get("english.txt");
+        File file = fileLoader.get("static/english.txt");
         Scanner scan = new Scanner(file);
         while(scan.hasNextLine()) {
             result.append(scan.nextLine()+"<br/>");

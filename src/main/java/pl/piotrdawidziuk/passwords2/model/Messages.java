@@ -1,8 +1,6 @@
 package pl.piotrdawidziuk.passwords2.model;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -105,7 +103,7 @@ public class Messages {
         }
 
         else {
-        return null;
+            return null;
         }
     }
 

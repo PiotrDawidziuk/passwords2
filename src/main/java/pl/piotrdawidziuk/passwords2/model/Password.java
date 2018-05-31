@@ -1,6 +1,7 @@
 package pl.piotrdawidziuk.passwords2.model;
 
 import javax.persistence.*;
+import java.util.Optional;
 
 @Entity
 @Table(name = "passwords")
