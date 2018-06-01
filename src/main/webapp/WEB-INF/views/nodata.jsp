@@ -15,6 +15,5 @@
 <p>No passwords to delete.</p>
 <p><a href="/" class="button">Continue</a>
 
-
 </body>
 </html>
