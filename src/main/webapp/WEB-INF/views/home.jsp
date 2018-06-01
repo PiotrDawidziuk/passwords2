@@ -9,8 +9,7 @@
 <html>
 <head>
     <title>Security Check</title>
-    <link href="/static/stylesheet.css" rel="stylesheet" media="screen">
-
+    <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
 <body>
 

@@ -17,8 +17,7 @@
             background-color: yellow;
         }
     </style>
-    <link href="/static/stylesheet.css" rel="stylesheet" media="screen">
-</head>
+    <link rel="stylesheet" href="/css/stylesheet.css"></head>
 <body>
 <p class="center">
     Enter a sample password you want to test!

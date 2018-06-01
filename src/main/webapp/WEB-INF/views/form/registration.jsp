@@ -16,8 +16,7 @@
             color:#990000;
             /*background-color: lightgray;*/
         }    </style>
-    <link href="/static/stylesheet.css" rel="stylesheet" media="screen">
-
+    <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
 <body>
 <p class="center">

@@ -17,10 +17,7 @@ import pl.piotrdawidziuk.passwords2.repository.PasswordRepository;
 import pl.piotrdawidziuk.passwords2.repository.UserRepository;
 
 import javax.validation.Valid;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,10 +69,18 @@ public class PasswordController {
                        @ModelAttribute("password") @Valid Password password,
                        Model model, BindingResult result) throws IOException {
 
-        File file = fileLoader.get("static/english.txt");
+        ClassLoader cl = this.getClass().getClassLoader();
+        InputStream inputStream = cl.getResourceAsStream("static/english.txt");
+
+
+
+        //File file = inputStream;
+        BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
+
         String sCurrentLine;
         List<String> lista = new ArrayList<>();
-        BufferedReader br = new BufferedReader(new FileReader(file));
+        //BufferedReader br = new BufferedReader(new FileReader(file));
+
         while ((sCurrentLine = br.readLine()) != null) {
             lista.add(sCurrentLine);
         }
@@ -148,6 +153,11 @@ public class PasswordController {
         return link;
     }
 
+
+    @GetMapping("/delete")
+    public String noData() {
+        return "nodata";
+    }
 
     @Autowired
     UserConverter userConverter;

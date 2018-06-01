@@ -10,8 +10,7 @@
 <html>
 <head>
     <title>Result</title>
-    <link href="/static/stylesheet.css" rel="stylesheet" media="screen">
-
+    <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
 <body>
 <table class="list">

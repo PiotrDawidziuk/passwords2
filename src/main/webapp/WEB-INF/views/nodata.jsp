@@ -8,11 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Data deleted</title>
+    <title>Nothing to delete</title>
     <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
 <body>
-<p>Your data was successfully deleted.</p>
+<p>No passwords to delete.</p>
 <p><a href="/" class="button">Continue</a>
 
 
